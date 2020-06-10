@@ -23,7 +23,6 @@ type ArticleEditInfo struct {
 func (bot *Bot) Get(title string) (string, error) {
 	json, err := bot.getWikiJsonObject("/raw/" + title)
 	if err != nil {
-		fmt.Println("Raw Doc Error=", err)
 		return "", err
 	}
 
