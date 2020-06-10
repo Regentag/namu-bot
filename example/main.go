@@ -39,14 +39,14 @@ func TestNamu() {
 
 	fmt.Println("로그인 되었습니다.")
 
-	art, err := bot.Get("뉴트리아")
+	art, err := bot.Get("나무위키:프로젝트/자동 편집")
 	if err != nil {
 		fmt.Println("오류: ", err.Error())
 	} else {
 		fmt.Println(art)
 	}
 
-	stop, err := bot.IsDiscussProgress("쇠말뚝")
+	stop, err := bot.IsDiscussProgress("나무위키:프로젝트/자동 편집")
 	if err != nil {
 		fmt.Println("오류: ", err.Error())
 	}
